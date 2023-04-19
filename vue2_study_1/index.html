@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="dist/vue.js"></script>
+    <script>
+        // 响应式 vue2
+        let vm = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    test_var: 1,
+                    test_obj: { a:1, b:2 },
+                    test_list: [1, 2, 'test', 4, 5],
+                    peoples: [
+                        { name: 'Mike', age: 18 },
+                        { name: 'John', age: 23 },
+                    ]
+                }
+            },
+        })
+        console.log(vm)
+    </script>
+</body>
+</html>
